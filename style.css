@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body{
+  background-image: url("http://vignette2.wikia.nocookie.net/steamtradingcards/images/1/19/Gravi_Background_The_Laboratory.jpg/revision/latest?cb%5Cx3d20140726012434");
+  background-size: cover;
+  font-family: "Francois One";
+  color:white;
+}
