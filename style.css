@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 
 body{
-  background-image: url("http://vignette2.wikia.nocookie.net/steamtradingcards/images/1/19/Gravi_Background_The_Laboratory.jpg/revision/latest?cb%5Cx3d20140726012434");
+  background-image: url("http://papers.co/wallpaper/papers.co-mg00-cloud-flare-dark-sky-wanna-fly-nature-29-wallpaper.jpg");
   background-size: cover;
   font-family: "Francois One";
   color:white;
+}
+
+#canvasSvg{
+  border: 3px solid #9BC1A5;
+}
+
+#playbutton{
+  background:none;
+  border: 0px solid black;
+}
+
+#reset{
+  margin-top: 80;
+}
+
+button{
+  background:none;
+  border: 0px solid black;
 }

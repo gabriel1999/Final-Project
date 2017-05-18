@@ -1,10 +1,11 @@
 var namespace = "http://www.w3.org/2000/svg"
 
+var button = document.getElementById("playbutton")
 
-var obsticle1 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", 113, 92, 80 , 70, 1)
-var obsticle2 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", 113, 92, 80 , 70, 1)
-var obsticle3 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", 113, 92, 80 , 70, 1)
-var obsticle4 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", 113, 92, 80 , 70, 1)
+var obsticle1 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", -70, 92, 80 , 70, 1)
+var obsticle2 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", -70, 92, 80 , 70, 1)
+var obsticle3 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", -70, 92, 80 , 70, 1)
+var obsticle4 =  makeImage("http://www.canalgif.net/Gifs-animados/Mitologia/Minotauros/Imagen-animada-Minotauro-06.gif", -70, 92, 80 , 70, 1)
 
 
 var gunn =  makeImage("http://vignette2.wikia.nocookie.net/callofduty/images/3/36/Tempest-Sights_BO3.png/revision/latest?cb=20151213102048", 110, 80, 220 , 190, 1)
@@ -21,6 +22,10 @@ var ob3X = 0
 var ob4X = 0
 
 function start(){
+
+button.setAttribute("style", "display: none;")
+
+
   move(obsticle1,1,0)
   move(obsticle2,0.7,0)
   move(obsticle3,0.5,0)
@@ -49,8 +54,9 @@ function start(){
     }
 
 
-    makeRect(45, 225, 80, 25, "green", 1)
-    makeText(score, 50, 245, 17, "Francois One", "black", 1)
+    makeRect(35, 230, 90, 25, "#9BC1A5", 1)
+    makeText(score, 95, 250, 17, "Francois One", "black", 1)
+    makeText("SCORE:", 45, 250, 17, "Francois One", "black", 1)
     requestAnimationFrame(start)
 }
 
@@ -59,25 +65,21 @@ function shoot(){
   if( ob1X > 180 && ob1X < 197){
     score = score + 1
     setX(obsticle1, -295)
-    alert("POOOP")
   }
 
   if( ob2X > 180 && ob1X < 197){
     score = score + 1
     setX(obsticle2, -310)
-    alert("POOOP")
   }
 
   if( ob3X > 180 && ob1X < 197){
     score = score + 1
     setX(obsticle3, -300)
-    alert("POOOP")
   }
 
   if( ob3X > 180 && ob1X < 197){
     score = score + 1
     setX(obsticle4, -280)
-    alert("POOOP")
   }
 }
 
