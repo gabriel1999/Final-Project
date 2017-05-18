@@ -84,7 +84,7 @@ function shoot(){
 }
 
 
-
+document.addEventListener('keydown', checkKey);
 
 //---------KEYBOARRD ----------//
 function checkKey(e) {
@@ -92,7 +92,6 @@ function checkKey(e) {
 
    //------------SPACE------------//
   if (e.keyCode == '32') {
-    alert("poop")
    shoot()
   }}
 
